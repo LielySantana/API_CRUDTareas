@@ -31,6 +31,7 @@ namespace API_CRUDTareas.Models.Responses
         /// Código de estado HTTP.
         /// </summary>
         public int StatusCode { get; set; }
+        public IAsyncEnumerable<void> Errors { get; internal set; }
 
         /// <summary>
         /// Inicializa una nueva instancia de la clase <see cref="BadRequestResponse"/> con una lista de mensajes.
